@@ -689,6 +689,9 @@ header .ham-burger.active span:nth-child(2){
     max-width: 50%;
     padding: 15px;
 }
+.contact .content .form{
+    margin-top: 25px;
+}
 .contact .content .form input,
 .contact .content .form textarea{
     height: 45px;
@@ -742,7 +745,7 @@ header .ham-burger.active span:nth-child(2){
     line-height: 20px;
     color: #ffffff;
     margin: 0;
-    padding: 0px 0px 15px;
+    padding: 0px 0px 20px;
     font-family: 'Open Sans', sans-serif;
 }
 .contact .content .text .info ul{
@@ -793,8 +796,8 @@ header .ham-burger.active span:nth-child(2){
 }
 .contact .content .text .copy{
     border-top: 1px solid #c11325;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 25px;
+    padding-top: 15px;
     color: #c5c5c5;
     font-size: 15px;
 }
