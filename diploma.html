@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayedTechSolution</title>
+    <link rel="stylesheet" href="diploma.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+         .wow:first-child{
+          visibility: hidden;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Sayed <span>Tech</span></a>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="index.html">Classes</a></li>
+                        <li><a href="index.html">Schedule</a></li>
+                        <li><a href="index.html">Pricing</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </a>
+        </div>
+    </header><br><br><br><br>
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text wow slideInLeft">
+                    <h2>Diploma in Computer Science</h2>
+                    <p>A six month long Diploma in Computer Science is highly valued today, among the young generation for its work/ job oriented approaches, syllabuses. After completing SSC, a student can join in this course and receives the status of a Diploma, from where they can enter the job field so easily. SayedTechSolution is one of the best institute of Bangladesh which provides IT education with ensuring quality.</p>
+                    <h2>Module</h2>
+                    <p>
+                        <span>Module 1: Basic Programming with C</span><br>
+                        <span>Module 2: Data Structure and Algorithm</span><br>
+                        <span>Module 3: Data Communication</span><br>
+                        <span>Module 4: Compiler Design</span><br>
+                        <span>Module 5: Database Management System</span>
+                    </p>
+                    <a href="register.html" class="btn">Start Now</a>
+                </div>
+                <div class="box img wow slideInRight">
+                    <img src="images/24.jpg" alt="start today">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="start-today">
+        <div class="container">
+            <div class="content">
+                <div class="box text wow slideInLeft" data-wow-delay="0.2s">
+                    <h2>Diploma in Networking</h2>
+                    <p>Earning a diploma can show that an individual is dedicated and hardworking, and that they have the hands-on experience that today’s employers need. By earning a diploma, graduates can prove that they have the necessary skills to be an asset to their company and a valued employee in the workplace.</p>
+                    <h2>Module</h2>
+                    <p>
+                        <span>Module 1: Introduction to Local Area Network</span><br>
+                        <span>Module 2: Defining Network With OSI model</span><br>
+                        <span>Module 3: Understanding Wired and wireless network</span><br>
+                        <span>Module 3: Understanding Internet Protocol</span><br>
+                        <span>Module 4: Implementing TCP/IP in the command line</span>
+                    </p>
+                    <a href="register.html" class="btn">Start Now</a>
+                </div>
+                <div class="box img wow slideInRight" data-wow-delay="0.2s">
+                    <img src="images/42.jpg" alt="start today">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".ham-burger").click(function(){
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active");
+            })
+            $(".accordian-container").click(function(){
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
+  })
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset: 0,
+          }
+        );
+        wow.init();
+      </script>
+
+</body>
+</html>
